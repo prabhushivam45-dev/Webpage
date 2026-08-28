@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for standard text rendering -->
+  <meta charset="UTF-8">
+  <!-- Ensures proper scaling and responsiveness on mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Shivam Prabhu - Student Portfolio</title>
+  
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR
+       ========================================== -->
+  <header>
+    <!-- Container limits max-width; navbar enables flexbox layout -->
+    <div class="container navbar">
+      <!-- Site Logo / Name Title -->
+      <h1 class="logo">Shivam Prabhu</h1>
+      
+      <!-- Navigation Links -->
+      <nav>
+        <ul>
+          <!-- Internal anchor links matching section IDs below -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO / ABOUT SECTION (Top Intro)
+       ========================================== -->
+  <section id="about" class="hero">
+    <div class="container">
+      <!-- Profile Picture -->
+      <img src="photo.jpg" class="profile-photo" alt="Shivam Prabhu Profile Photo">
+      
+      <!-- Fallback circle with initials if image fails to load -->
+      <div class="profile-photo photo-fallback">SP</div>
+      
+      <!-- Main Greeting & Brief Tagline -->
+      <h2>Hi, I'm Shivam Prabhu</h2>
+      <p>M.Tech (CSE) Student at IIT Bombay | Competitive Programmer | GATE Qualified | JEE Qualified</p>
+      
+      <!-- Call-to-action button linking directly to Contact Section -->
+      <a href="#contact" class="btn">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EDUCATION SECTION
+       ========================================== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+
+      <!-- IIT Bombay Card -->
+      <div class="card">
+        <div class="card-header">
+          <h3>Indian Institute of Technology, Bombay</h3>
+          <span>2026 - Present</span>
+        </div>
+        <p>M.Tech - Computer Science and Engineering</p>
+        <p>Mumbai, Maharashtra</p>
+      </div>
+
+      <!-- MANIT Bhopal Card -->
+      <div class="card">
+        <div class="card-header">
+          <h3>Maulana Azad National Institute of Technology, Bhopal</h3>
+          <span>2021 - 2025</span>
+        </div>
+        <p>B.Tech - Computer Science and Engineering | CGPA: 8.55</p>
+        <p>Bhopal, Madhya Pradesh</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROJECTS SECTION
+       (alt-bg adds alternating background color)
+       ========================================== -->
+  <section id="projects" class="section alt-bg">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <!-- Project 1: Breast Cancer Detection -->
+      <div class="card">
+        <div class="card-header">
+          <h3>Breast Cancer Detection using Histopathological Images</h3>
+          <span>2025</span>
+        </div>
+        <p class="tag">Machine Learning</p>
+        <ul>
+          <li>Developed a machine learning model to classify histopathological images into benign and malignant categories,
+utilizing data preprocessing, feature extraction, and model optimization techniques.</li>
+          <li>Achieved high accuracy through experimentation with various algorithms and extensive hyperparameter
+tuning.</li>
+          <li>Aimed to support early detection and diagnosis of breast cancer by leveraging advanced image classification
+methods.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: AI Snake Game -->
+      <div class="card">
+        <div class="card-header">
+          <h3>AI-based Snake Game Using Reinforcement Learning</h3>
+          <span>2024</span>
+        </div>
+        <p class="tag">Python</p>
+        <ul>
+          <li>Developed an AI-driven snake game where the snake employs reinforcement learning to enhance its strategies
+based on reward feedback.</li>
+          <li>Implemented game logic and trained the AI to optimize its actions, improving performance.</li>
+          <li>Demonstrated the practical application of reinforcement learning techniques in a dynamic gaming
+environment.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TECHNICAL SKILLS SECTION
+       ========================================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Technical Skills</h2>
+
+      <!-- Responsive CSS Grid container for skill boxes -->
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Programming Languages</h3>
+          <p>C++, C, Python</p>
+        </div>
+        <div class="skill-box">
+          <h3>Web Technologies</h3>
+          <p>HTML5, CSS3, React, MongoDB, Express, JavaScript, NodeJS</p>
+        </div>
+        <div class="skill-box">
+          <h3>Core Concepts</h3>
+          <p>Data Structures &amp; Algorithms, Operating Systems, OOP, Computer Networks, System Design, DBMS</p>
+        </div>
+        <div class="skill-box">
+          <h3>Soft Skills</h3>
+          <p>Problem-Solving, Adaptability, Time Management, Communication, Creativity</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ACHIEVEMENTS & EXPERIENCE SECTION
+       ========================================== -->
+  <section id="achievements" class="section alt-bg">
+    <div class="container">
+      <h2>Achievements &amp; Experience</h2>
+
+      <!-- Two-column CSS grid layout -->
+      <div class="two-col">
+        <!-- Column 1: Competitive Programming Stats -->
+        <div>
+          <h3>Competitive Programming</h3>
+          <ul>
+            <li>Codeforces Max Rating: 1495 (Specialist)</li>
+            <li>Solved 250+ problems on LeetCode</li>
+            <li>Solved 400+ problems on GeeksforGeeks</li>
+            <li>Solved 150+ problems on CSES</li>
+            <li>Solved 300+ problems on Coding Ninjas</li>
+            <li>Solved 100+ problems on AtCoder</li>
+          </ul>
+        </div>
+        
+        <!-- Column 2: Exams & Certifications -->
+        <div>
+          <h3>Achievements &amp; Certifications</h3>
+          <ul>
+            <li>GATE Qualified (CSE)</li>
+            <li>JEE Qualified</li>
+            <li>Specialist at Codeforces</li>
+            <li>Mastering Data Structures and Algorithms - GfG</li>
+            <li>Competitive Programming - AlgoZenith</li>
+            <li>Graph Programming Camp - AlgoUniversity</li>
+            <li>Web Development - Internshala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT SECTION
+       ========================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <!-- Direct Contact Details -->
+        <p>Phone: +91-8102605718</p>
+        <p>Email: prabhushivam123@gmail.com</p>
+        <p>Location: Mumbai, Maharashtra (IIT Bombay)</p>
+
+        <!-- Social Media / Coding Profile Links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shivam-prabhu-018729245?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+          <a href="https://github.com/prabhushivam">GitHub</a>
+          <a href="https://codeforces.com/profile/prabhushivam62">Codeforces</a>
+          <a href="https://leetcode.com/u/prabhushivam123/">LeetCode</a>
+          <a href="https://www.geeksforgeeks.org/profile/prabhushivam123?tab=activity">GeeksforGeeks</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <!-- &copy; outputs the copyright (©) symbol -->
+      <p>&copy; 2026 Shivam Prabhu. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html><p>Updated website content.</p>

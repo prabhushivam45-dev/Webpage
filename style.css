@@ -1,0 +1,261 @@
+/* ===== Basic Reset ===== */
+/* Remove default margins/padding and set standard box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page body base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Shared container to center content and set max width */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section main title styling */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1a3c6e;
+}
+
+/* Default link overrides */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset list styling */
+ul {
+  list-style: none;
+}
+
+/* ===== Header ===== */
+/* Top navigation bar background & padding */
+header {
+  background-color: #1a3c6e;
+  color: white;
+  padding: 15px 0;
+}
+
+/* Align logo and nav menu side-by-side */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo heading text size */
+.logo {
+  font-size: 1.4rem;
+}
+
+/* Arrange navigation menu items horizontally */
+.navbar nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* White color for navbar links */
+.navbar nav ul li a {
+  color: white;
+}
+
+/* ===== Hero Section ===== */
+/* Intro section hero banner layout */
+.hero {
+  background-color:white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* Circular profile image styles */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2d538c;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Initial circle fallback if photo fails to load */
+.photo-fallback {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a3c6e;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* Spacing for hero heading and tagline */
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+}
+
+/* Call-to-action button styling */
+.btn {
+  display: inline-block;
+  background-color: #1a3c6e;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+/* ===== Sections ===== */
+/* Standard section padding */
+.section {
+  padding: 50px 0;
+}
+
+/* Alternating background color for visual separation */
+.alt-bg {
+  background-color: #f5f5f5;
+}
+
+/* ===== Cards (Education / Projects) ===== */
+/* Generic card container styling */
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Flexbox layout for title and dates */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-header h3 {
+  color: #1a3c6e;
+}
+
+.card-header span {
+  color: #777;
+}
+
+/* Tag label for project technology */
+.card .tag {
+  color: #1a3c6e;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* Bullet list formatting inside cards */
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+}
+
+/* ===== Skills ===== */
+/* Responsive CSS grid for skill boxes */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.skill-box h3 {
+  color: #1a3c6e;
+  margin-bottom: 10px;
+}
+
+/* ===== Achievements ===== */
+/* Equal two-column grid layout */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.two-col h3 {
+  color: #1a3c6e;
+  margin-bottom: 15px;
+}
+
+.two-col ul li {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+/* ===== Contact ===== */
+/* Centered contact details layout */
+.contact-info {
+  text-align: center;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+/* Flex row for profile button links */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Individual profile link buttons */
+.social-links a {
+  background-color: #1a3c6e;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+/* ===== Footer ===== */
+/* Bottom footer bar */
+footer {
+  background-color: #1a3c6e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ===== Responsive ===== */
+/* Mobile layout overrides for screens under 700px */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+}
